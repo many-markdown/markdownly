@@ -7,7 +7,7 @@ export const initialState = {
 export default function reducer(state, action) {
   switch(action.type){
     case SET_MARKDOWN:
-      return { ...state, markdown: action.payload  };
+      return { ...state, markdown: action.payload };
 
     default:
       return state;
