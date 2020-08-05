@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Editor.css';
 import { useDispatch } from '../../hooks/appContext';
 import { setMarkdown } from '../../actions/markdownActions';
@@ -16,11 +15,5 @@ const Editor = () => {
 
 };
   
-
-// Editor.propTypes = {
-//   markdown: PropTypes.string.isRequired,
-//   updateMarkdown: PropTypes.func.isRequired
-// };
-
 export default Editor;
  

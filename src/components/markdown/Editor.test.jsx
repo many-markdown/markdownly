@@ -4,7 +4,7 @@ import Editor from './Editor.jsx';
 
 describe('Editor component', () => {
   it('renders Editor', () => {
-    const wrapper = shallow(<Editor markdown={'# hello there'} updateMarkdown={() => {}}/>);
+    const wrapper = shallow(<Editor />);
     expect(wrapper).toMatchSnapshot();
   });
 });
