@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor component renders Editor 1`] = `
+<textarea
+  className="Editor"
+  onChange={[Function]}
+  value="# hello there"
+/>
+`;

@@ -1,7 +1,7 @@
 import { SET_MARKDOWN } from '../actions/markdownActions';
 
 export const initialState = {
-  markdown: ''
+  markdown: '# hello there'
 };
 
 export default function reducer(state, action) {
