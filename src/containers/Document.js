@@ -11,14 +11,15 @@ export default function Document() {
     setMarkdown(target.value);
   };
 
-  
   return (
     <>
       <div className={styles.Document}>
-        <Editor markdown={markdown} updateMarkdown={updateMarkdown} />
-        <Preview markdown={markdown} />
+        {/* <Editor markdown={markdown} updateMarkdown={updateMarkdown} /> */}
+        <Editor />
+        <Preview />
+
+        {/* <Preview markdown={markdown} /> */}
       </div>
     </>
   );
-  
 }
