@@ -4,6 +4,7 @@ export const AppContext = React.createContext();
 
 export const useSelector = selectorFn => {
   const { state } = useContext(AppContext);
+  console.log(state);
   return selectorFn(state);
 };
 
