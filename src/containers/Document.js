@@ -1,26 +1,24 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import Preview from '../components/markdown/Preview';
 import Editor from '../components/markdown/Editor';
 import styles from './Document.css';
 
-export default class Document extends PureComponent {
-  state = {
-    markdown: '# Hi there'
+export default function Document() {
+  
+  const [markdown, setMarkdown] = useState('# Hi there');
+
+  const updateMarkdown = ({ target }) => {
+    setMarkdown(target.value);
   };
 
-  updateMarkdown = ({ target }) => {
-    this.setState({ markdown: target.value });
-  };
-
-  render() {
-    const { markdown } = this.state;
-    return (
-      <>
-        <div className={styles.Document}>
-          <Editor markdown={markdown} updateMarkdown={this.updateMarkdown} />
-          <Preview markdown={markdown} />
-        </div>
-      </>
-    );
-  }
+  
+  return (
+    <>
+      <div className={styles.Document}>
+        <Editor markdown={markdown} updateMarkdown={updateMarkdown} />
+        <Preview markdown={markdown} />
+      </div>
+    </>
+  );
+  
 }
