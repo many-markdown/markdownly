@@ -11,7 +11,7 @@ const Editor = () => {
   const markdown = useSelector(getMarkdown);
 
   return (
-    <textarea className={styles.Editor} value={markdown} onChange={() => dispatch(setMarkdown())} />
+    <textarea className={styles.Editor} value={markdown} onChange={({ target }) => dispatch(setMarkdown(target.value))} />
   );
 
 };
