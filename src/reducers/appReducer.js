@@ -1,4 +1,4 @@
-import { SET_MARKDOWN, NEW_FILE } from '../actions/markdownActions';
+import { SET_MARKDOWN, NEW_FILE, DELETE_FILE } from '../actions/markdownActions';
 
 export const initialState = {
   currentId: 1,
@@ -19,6 +19,8 @@ export default function reducer(state, action) {
         }) };
     case NEW_FILE:
       return { ...state, markdownFileList: [...state.markdownFileList, action.payload] };
+    case DELETE_FILE:
+      return { ...state, markdownFileList: state.markdownFileList.filter(item => item.id !== action.payload) };
     default:
       return state;
   }
