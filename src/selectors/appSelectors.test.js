@@ -7,7 +7,6 @@ describe('markdown selectors', () => {
     };
 
     const markdown = getMarkdown(state);
-
     expect(markdown).toEqual('# hello there');
   });
 
@@ -15,10 +14,8 @@ describe('markdown selectors', () => {
     const state = {
       markdown: '# hello there'
     };
-
+    
     const markdown = getMarkdownPreview(state);
-
     expect(markdown).toEqual(expect.any(String));
-  });
-  
+  }); 
 });
