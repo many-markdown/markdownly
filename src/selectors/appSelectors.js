@@ -9,6 +9,3 @@ export const getAllMarkdownFiles = state => state.markdownFileList;
 export const getMarkdownPreview = state => {
   return marked(getMarkdown(state));
 };
-
-
-// click file -> opens new page with id in url -> useParams grabs id -> getMarkdown gets the file from array by id
