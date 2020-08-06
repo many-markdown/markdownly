@@ -1,4 +1,4 @@
-const { setMarkdown, SET_MARKDOWN, newFile, NEW_FILE } = require('./markdownActions');
+const { setMarkdown, SET_MARKDOWN, newFile, NEW_FILE, deleteFile, DELETE_FILE } = require('./markdownActions');
 
 describe('actions', () => {
   it('it creates an action that updates markdown', () => {
@@ -10,7 +10,6 @@ describe('actions', () => {
   });
 
   it('it creates an action that creates a new file', () => {
-
     const fileName = 'file 1';
     const action = newFile(fileName);
     expect(action).toEqual({
@@ -20,6 +19,15 @@ describe('actions', () => {
         fileName,
         body: ''   
       }
+    });
+  });
+
+  it('it creates an action that deletes a new file', () => {
+    const fileId = 1;
+    const action = deleteFile(fileId);
+    expect(action).toEqual({
+      type: DELETE_FILE,
+      payload: 1
     });
   });
 });

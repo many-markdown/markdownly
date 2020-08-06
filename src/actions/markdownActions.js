@@ -15,3 +15,9 @@ export const newFile = fileName => ({
     body: ''   
   }
 });
+
+export const DELETE_FILE = 'DELETE_FILE';
+export const deleteFile = id => ({
+  type: DELETE_FILE,
+  payload: id
+});
