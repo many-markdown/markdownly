@@ -1,6 +1,5 @@
 import { SET_MARKDOWN, NEW_FILE } from '../actions/markdownActions';
 
-
 export const initialState = {
   currentId: 1,
   markdownFileList: [{
@@ -9,7 +8,6 @@ export const initialState = {
     body: '# hello there'
   }]
 };
-
 
 export default function reducer(state, action) {
   switch(action.type){

@@ -50,6 +50,5 @@ describe('app reducer', () => {
         body: ''
       }]
     });
-
   });
 });

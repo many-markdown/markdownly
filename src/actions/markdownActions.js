@@ -7,7 +7,6 @@ export const setMarkdown = markdown => ({
 });
 
 export const NEW_FILE = 'NEW_FILE';
-
 export const newFile = fileName => ({
   type: NEW_FILE,
   payload: {
