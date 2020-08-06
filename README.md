@@ -3,10 +3,13 @@
 
 ### v1.2
 - changes markdown to an object
+- fixed bug that effected typeing
 
 ### v1.3
-
 - Added component to list all files
+
+### v1.4
+- added input form to display new forms
 
 
 

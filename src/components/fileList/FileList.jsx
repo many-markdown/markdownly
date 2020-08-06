@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from '../../hooks/appContext';
 import { getAllMarkdownFiles } from '../../selectors/appSelectors';
+import SaveForm from '../Saveform/Saveform';
 
 export default function FileList() {
   const markdownFileList = useSelector(getAllMarkdownFiles);
@@ -12,8 +13,11 @@ export default function FileList() {
     );
   });
   return (
-    <ul>
-      {listElement}
-    </ul>
+    <>
+      <ul>
+        {listElement}
+      </ul>
+      <SaveForm />
+    </>
   );
 }
