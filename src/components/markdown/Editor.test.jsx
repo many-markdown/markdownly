@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Editor from './Editor.jsx';
-
 import AppProvider from '../../providers/AppProvider';
 
 describe('Editor component', () => {
@@ -10,4 +9,3 @@ describe('Editor component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-
