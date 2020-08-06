@@ -1,3 +1,16 @@
+### v1.1
+- base project refactored into flux pattern
+
+### v1.2
+- changes markdown to an object
+
+### v1.3
+
+- Added component to list all files
+
+
+
+
 # Markdownly
 
 We currently have a markdown editor that allows our customers to edit markdown

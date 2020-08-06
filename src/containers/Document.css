@@ -1,4 +1,5 @@
 .Document {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(1fr, 1fr, 1fr); */
 }
