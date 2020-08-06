@@ -6,8 +6,14 @@ exports[`Editor component renders Editor 1`] = `
     Object {
       "dispatch": [Function],
       "state": Object {
-        "markdown": "# hello there",
-        "markdownFileList": Array [],
+        "currentId": 1,
+        "markdownFileList": Array [
+          Object {
+            "body": "# hello there",
+            "fileName": "default",
+            "id": 1,
+          },
+        ],
       },
     }
   }

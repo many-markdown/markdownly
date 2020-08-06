@@ -11,3 +11,9 @@ export const useDispatch = () => {
   const { dispatch } = useContext(AppContext);
   return dispatch;
 };
+
+export const useId = () => {
+  const { searchId } = useContext(AppContext);
+  return searchId;
+  // /:id
+};
