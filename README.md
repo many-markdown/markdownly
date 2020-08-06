@@ -1,3 +1,8 @@
+### v1.1
+- base project refactored into flux pattern
+
+
+
 # Markdownly
 
 We currently have a markdown editor that allows our customers to edit markdown
