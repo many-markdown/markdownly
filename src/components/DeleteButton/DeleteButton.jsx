@@ -7,7 +7,7 @@ export default function DeleteButton({ id }) {
   const dispatch = useDispatch();
   return (
     <div>
-      <button onClick={() => dispatch(deleteFile(id))}></button>
+      <button onClick={() => dispatch(deleteFile(id))}>Delete File</button>
     </div>
   );
 }
