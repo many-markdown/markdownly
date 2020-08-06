@@ -1,5 +1,6 @@
 import { SET_MARKDOWN } from '../actions/markdownActions';
 
+
 export const initialState = {
   currentId: 1,
   markdownFileList: [{
@@ -9,10 +10,16 @@ export const initialState = {
   }]
 };
 
+
 export default function reducer(state, action) {
   switch(action.type){
-    case SET_MARKDOWN:
-      return { ...state, markdown: action.payload };
+    case SET_MARKDOWN: 
+      
+      return {
+        ...state, markdownFileList: state.markdownFileList.map(item => {
+          if(item.id !== state.currentId) return item;
+          return { ...item, body:action.payload };
+        }) };
     default:
       return state;
   }

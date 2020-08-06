@@ -1,6 +1,10 @@
 ### v1.1
 - base project refactored into flux pattern
 
+### v1.2
+- changes markdown to an object
+
+
 
 
 # Markdownly
