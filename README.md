@@ -4,6 +4,10 @@
 ### v1.2
 - changes markdown to an object
 
+### v1.3
+
+- Added component to list all files
+
 
 
 
