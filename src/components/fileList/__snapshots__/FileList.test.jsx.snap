@@ -14,6 +14,8 @@ exports[`FileList component renders FileList 1`] = `
             "id": 1,
           },
         ],
+        "searchCategory": "fileName",
+        "searchQuery": "",
       },
     }
   }

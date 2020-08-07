@@ -1,4 +1,4 @@
-const { getMarkdown, getMarkdownPreview, getAllMarkdownFiles } = require('./appSelectors');
+const { getMarkdown, getMarkdownPreview, getAllMarkdownFiles, getSearchedFiles } = require('./appSelectors');
 
 describe('markdown selectors', () => {
   it('returns the markdown stored in state', () => {
@@ -44,5 +44,31 @@ describe('markdown selectors', () => {
     
     const markdown = getMarkdownPreview(state);
     expect(markdown).toEqual(expect.any(String));
+  });
+  
+  it('filters the list of files by fileName', () => {
+    const state = {
+      currentId: 1,
+      searchQuery: 'default1',
+      searchCategory: 'fileName',
+      markdownFileList: [
+        {
+          id: 1,
+          fileName: 'default1',
+          body: '# hello there'
+        },
+        {
+          id: 2,
+          fileName: 'default2',
+          body: '# hello there'
+        }]
+    };
+    
+    const files = getSearchedFiles(state);
+    expect(files).toEqual([{
+      id: 1,
+      fileName: 'default1',
+      body: '# hello there'
+    }]);
   }); 
 });
