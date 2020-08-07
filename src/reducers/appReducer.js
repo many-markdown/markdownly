@@ -1,4 +1,9 @@
-import { SET_MARKDOWN, NEW_FILE, DELETE_FILE, UPDATE_SEARCH_QUERY, UPDATE_SEARCH_CATEGORY, UPDATE_CURRENT_ID } from '../actions/markdownActions';
+import { SET_MARKDOWN, 
+  NEW_FILE, DELETE_FILE, 
+  UPDATE_SEARCH_QUERY, 
+  UPDATE_SEARCH_CATEGORY,
+  UPDATE_CURRENT_ID,
+  SET_INITIAL_STATE } from '../actions/markdownActions';
 
 export const initialState = {
   currentId: 1,
@@ -29,6 +34,8 @@ export default function reducer(state, action) {
       return { ...state, searchCategory: action.payload };
     case UPDATE_CURRENT_ID:
       return { ...state, currentId: action.payload };
+    case SET_INITIAL_STATE:
+      return { ...state, markdownFileList: action.payload };
     default:
       return state;
   }

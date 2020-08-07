@@ -39,3 +39,9 @@ export const updateCurrentId = newId => ({
   type: UPDATE_CURRENT_ID,
   payload: newId
 });
+
+export const SET_INITIAL_STATE = 'SET_INITIAL_STATE';
+export const setInitialState = localStorage => ({
+  type: SET_INITIAL_STATE,
+  payload: localStorage
+});
