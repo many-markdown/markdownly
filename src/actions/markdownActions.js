@@ -21,3 +21,15 @@ export const deleteFile = id => ({
   type: DELETE_FILE,
   payload: id
 });
+
+export const UPDATE_SEARCH_QUERY = 'UPDATE_SEARCH_QUERY';
+export const updateSearchQuery = searchQuery => ({
+  type: UPDATE_SEARCH_QUERY,
+  payload: searchQuery
+});
+
+export const UPDATE_SEARCH_CATEGORY = 'UPDATE_SEARCH_CATEGORY';
+export const updateSearchCategory = searchCategory => ({
+  type: UPDATE_SEARCH_CATEGORY,
+  payload: searchCategory
+});

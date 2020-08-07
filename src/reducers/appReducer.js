@@ -1,7 +1,9 @@
-import { SET_MARKDOWN, NEW_FILE, DELETE_FILE } from '../actions/markdownActions';
+import { SET_MARKDOWN, NEW_FILE, DELETE_FILE, UPDATE_SEARCH_QUERY, UPDATE_SEARCH_CATEGORY } from '../actions/markdownActions';
 
 export const initialState = {
   currentId: 1,
+  searchQuery: '',
+  searchCategory: 'fileName',
   markdownFileList: [{
     id: 1,
     fileName: 'default',
@@ -21,6 +23,10 @@ export default function reducer(state, action) {
       return { ...state, markdownFileList: [...state.markdownFileList, action.payload] };
     case DELETE_FILE:
       return { ...state, markdownFileList: state.markdownFileList.filter(item => item.id !== action.payload) };
+    case UPDATE_SEARCH_QUERY:
+      return { ...state, searchQuery: action.payload };
+    case UPDATE_SEARCH_CATEGORY:
+      return { ...state, searchCategory: action.payload };
     default:
       return state;
   }
