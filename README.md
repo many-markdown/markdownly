@@ -17,6 +17,9 @@
 ### 1.6
 - added functioning searchbar
 
+### 1.7
+- added ability to click between files and work on multiple files simultaneously
+
 
 
 # Markdownly

@@ -33,3 +33,15 @@ export const updateSearchCategory = searchCategory => ({
   type: UPDATE_SEARCH_CATEGORY,
   payload: searchCategory
 });
+
+export const UPDATE_CURRENT_ID = 'UPDATE_CURRENT_ID';
+export const updateCurrentId = newId => ({
+  type: UPDATE_CURRENT_ID,
+  payload: newId
+});
+
+export const SET_INITIAL_STATE = 'SET_INITIAL_STATE';
+export const setInitialState = localStorage => ({
+  type: SET_INITIAL_STATE,
+  payload: localStorage
+});
