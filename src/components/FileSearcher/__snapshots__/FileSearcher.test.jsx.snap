@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FileList component renders FileList 1`] = `
+exports[`FileSearcher component renders FileSearcher 1`] = `
 <ContextProvider
   value={
     Object {
@@ -20,6 +20,6 @@ exports[`FileList component renders FileList 1`] = `
     }
   }
 >
-  <FileList />
+  <FileSearcher />
 </ContextProvider>
 `;

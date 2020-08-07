@@ -6,6 +6,12 @@ export const getMarkdown = state => {
 };
 export const getAllMarkdownFiles = state => state.markdownFileList;
 
+export const getSearchedFiles = state => state.markdownFileList.filter(item => 
+{
+  if(!state.searchQuery) return item;
+  return item[state.searchCategory].includes(state.searchQuery);
+});
+
 export const getMarkdownPreview = state => {
   return marked(getMarkdown(state));
 };

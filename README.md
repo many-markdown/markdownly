@@ -11,6 +11,11 @@
 ### v1.4
 - added input form to display new forms
 
+### v1.5
+- added delete button to remove markdown files
+
+### 1.6
+- added functioning searchbar
 
 
 
