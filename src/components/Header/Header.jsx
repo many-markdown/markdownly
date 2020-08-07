@@ -14,7 +14,7 @@ export default function Header() {
       <NavLink to="/AboutUS" >
         about Us
       </NavLink>
-      <NavLink to="/Document" >
+      <NavLink to="/document/:id" >
         Markdown
       </NavLink>
 

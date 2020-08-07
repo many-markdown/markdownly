@@ -17,7 +17,7 @@ export default function App() {
         <Route exact path = '/'>
           <LandingPage />
         </Route> 
-        <Route exact path = '/Document'>
+        <Route path = '/document/:id'>
           <Document />
         </Route> 
         <Route exact path = '/AboutUs'>

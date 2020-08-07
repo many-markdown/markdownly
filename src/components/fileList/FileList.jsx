@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector } from '../../hooks/appContext';
 import { getSearchedFiles } from '../../selectors/appSelectors';
 import  DeleteButton  from '../DeleteButton/DeleteButton';
@@ -10,7 +11,7 @@ export default function FileList() {
   const listElement = markdownFileList.map(({ fileName, id }, i) => {
     return (
       <li key={i} >
-        {fileName}
+        <Link to={`/document/${id}`}>{fileName}</Link>
         <DeleteButton id={id}/>
       </li>
     );
