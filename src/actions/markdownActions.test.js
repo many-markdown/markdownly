@@ -1,4 +1,4 @@
-const { setMarkdown, SET_MARKDOWN, newFile, NEW_FILE, deleteFile, DELETE_FILE, updateSearchCategory, updateSearchQuery, UPDATE_SEARCH_CATEGORY, UPDATE_SEARCH_QUERY } = require('./markdownActions');
+const { setMarkdown, SET_MARKDOWN, newFile, NEW_FILE, deleteFile, DELETE_FILE, updateSearchCategory, updateSearchQuery, UPDATE_SEARCH_CATEGORY, UPDATE_SEARCH_QUERY, updateCurrentId, UPDATE_CURRENT_ID } = require('./markdownActions');
 
 describe('actions', () => {
   it('it creates an action that updates markdown', () => {
@@ -46,6 +46,15 @@ describe('actions', () => {
     expect(action).toEqual({
       type: UPDATE_SEARCH_CATEGORY,
       payload: 'body'
+    });
+  });
+
+  it('it creates an action that updates the currentId state', () => {
+    const newId = 2;
+    const action = updateCurrentId(newId);
+    expect(action).toEqual({
+      type: UPDATE_CURRENT_ID,
+      payload: 2
     });
   });
 });

@@ -14,6 +14,8 @@ exports[`SaveForm component renders SaveForm 1`] = `
             "id": 1,
           },
         ],
+        "searchCategory": "fileName",
+        "searchQuery": "",
       },
     }
   }
