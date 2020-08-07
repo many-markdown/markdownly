@@ -33,3 +33,9 @@ export const updateSearchCategory = searchCategory => ({
   type: UPDATE_SEARCH_CATEGORY,
   payload: searchCategory
 });
+
+export const UPDATE_CURRENT_ID = 'UPDATE_CURRENT_ID';
+export const updateCurrentId = newId => ({
+  type: UPDATE_CURRENT_ID,
+  payload: newId
+});
